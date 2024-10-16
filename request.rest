@@ -1,0 +1,21 @@
+GET http://localhost:3090/teste
+
+###
+
+POST http://localhost:3090/create-user
+Content-Type: application/json
+
+{
+    "name_create": "felipe_e2458",
+    "password_create": "124578963"
+}
+
+###
+
+POST http://localhost:3090/validate-login
+Content-Type: application/json
+
+{
+    "name_login": "felipe_e2458",
+    "password_login": "124578963"
+}

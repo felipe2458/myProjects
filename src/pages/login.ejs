@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/CSS/users_css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-wraper">
+        <form method="post" action="/validate-login">
+            <header>
+                <h1>Login</h1>
+            </header><!-- header -->
+
+            <div class="container-inputs">
+                <div class="input-wraper">
+                    <input class="preencher" type="text" name="name_login" id="nameLogin">
+                    <label for="nameLogin">Username</label>
+                    <div class="msg">
+                        <p class="erro"></p>
+                    </div><!-- msg -->
+                </div><!-- input-wraper -->
+
+                <div class="input-wraper">
+                    <input class="preencher" type="password" name="password_login" id="passwordLogin">
+                    <label for="passwordLogin">Password</label>
+                    <div class="msg">
+                        <p class="erro"></p>
+                    </div><!-- msg -->
+                </div><!-- input-wraper -->
+
+                <div class="input-envi-wraper">
+                    <div class="check-wraper">
+                        <input type="checkbox" name="rememberMe" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                    </div><!-- check-wraper -->
+
+                    <div class="sub-wraper">
+                        <input type="submit" value="Login" class="submit">
+
+                        <div class="createUser">
+                            <p>Don't have an account? <a href="/create-user">Sign up</a></p>
+                        </div><!-- createUser -->
+
+                    </div><!-- sub-wraper -->
+                </div><!-- input-sub-wraper -->
+
+            </div><!-- container-inputs -->
+
+        </form><!-- form -->
+    </div><!-- form-wraper -->
+</body>
+<script src="../public/JS/users_js/JQuery.e.js"></script>
+<script src="../public/JS/JQuery.js"></script>
+<script src="../public/JS/users_js/login.js"></script>
+</html>

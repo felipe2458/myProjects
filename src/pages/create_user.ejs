@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/CSS/users_css/create.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-wraper">
+        <form method="post" action="/create-user">
+            <header><h1>register</h1></header>
+
+            <div class="input-wraper">
+                <input class="preencher" type="text" id="username" name="name_create">
+                <label for="username">Username</label>
+                <div class="icon" style="background-image: url(../public/images/icons/user_icon.svg);"></div>
+                <div class="erro-wraper"><p class="erro"></p></div>
+            </div><!-- input-wraper -->
+
+            <div class="input-wraper">
+                <input class="preencher" type="password" id="password" name="password_create">
+                <label for="password">Password</label>
+                <div class="icon pass" style="background-image: url(../public/images//icons/view_password.svg); cursor: pointer;">
+                    <div class="hide"></div>
+                </div><!-- icon -->
+                <div class="erro-wraper"><p class="erro"></p></div>
+            </div><!-- input-wraper -->
+
+            <div class="input-wraper">
+                <input class="preencher" type="password" id="passwordConfirm" name="password_confirm" class="err">
+                <label for="passwordConfirm">Confirm Password</label>
+                <div class="icon pass" style="background-image: url(../public/images//icons/view_password.svg); cursor: pointer;">
+                    <div class="hide"></div>
+                </div><!-- icon -->
+                <div class="erro-wraper"><p class="erro"></p></div>
+            </div><!-- input-wraper -->
+
+            <div class="input-wraper">
+                <input type="submit" value="Create" id="action" name="action">
+            </div><!-- input-wraper -->
+
+            <div class="login">
+                <p>Already have an account? <a href="/login">login</a></p>
+            </div><!-- login -->
+
+        </form><!-- form -->
+    </div><!-- form-wraper -->
+</body>
+<script src="../public/JS/users_js/JQuery.e.js"></script>
+<script src="../public/JS/JQuery.js"></script>
+<script src="../public/JS/users_js/create.js"></script>
+</html>
